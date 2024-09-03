@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  margin-top: 10px;
+}
+.Header {
+  background-color: #333; /* Цвет фона */
+  color: white; /* Цвет текста */
+  padding: 10px 20px; /* Внутренний отступ */
+}
+.Footer {
+  background-color: #333; /* Цвет фона */
+  color: white; /* Цвет текста */
+  padding: 10px 20px; /* Внутренний отступ */
+  
+}
+
+.Header nav ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  margin: 0;
+  padding: 0;
+}
+
+.Header nav ul li {
+  display: inline-block; /* Отображаем элементы списка в строку */
+  margin-right: 20px; /* Отступ между элементами */
+}
+
+.Header nav ul li:last-child {
+  margin-right: 0; /* Убираем отступ справа у последнего элемента */
+}
+
+.Header nav ul li a {
+  color: white; /* Цвет ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-weight: bold; /* Жирный текст */
+}
+.Catalog{
+  min-height: 600px;
+}
+.Header nav ul li a:hover {
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+.Card {
+  width: calc(20.33% - 20px); /* Устанавливаем ширину карточки на треть от ширины контейнера с учетом отступов между карточками */
+  margin: 20px; /* Отступ между карточками */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+  overflow: hidden; /* Обрезаем контент, выходящий за пределы карточки */
+  display: inline-block; /* Размещаем карточки в строках */
+}
+
+.CardImg {
+  width: 100%; /* Заполняем всю ширину карточки */
+  height: 200px; /* Сохраняем пропорции изображения */
+}
+
+.CardContent {
+  padding: 20px; /* Добавляем отступы вокруг контента */
+}
+
+h3 {
+  margin: 0; /* Убираем отступы у заголовка */
+}
+
+/* Для расположения карточек в строках по три используем flexbox */
+
+@media screen and (max-width: 768px) {
+  .Card {
+    width: calc(50% - 20px); /* На экранах с шириной до 768px карточки будут занимать половину ширины контейнера */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Card {
+    width: calc(100% - 20px); /* На экранах с шириной до 480px карточки будут занимать всю ширину контейнера */
+  }
+}
+.Details {
+  display: flex; /* Размещаем год и категорию в одной строке */
+  justify-content: space-between; /* Распределяем элементы равномерно по горизонтали */
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+/* App.css */
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.SearchBar input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.SearchBar button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.SearchBar button:hover {
+  background-color: #0056b3;
+}
