@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" class="form">
+    <h3>Заполните форму:</h3><div class="field">
+    <label id="surname">Фамилия
+      <input type="text" id="surname-input" class="write" class="js-input" class="nameInput">
+    </label></div><div class="field">
+      <div id="nonvalid-surname" class="nonvalid"></div>
+    <label id="name">Имя
+      <input type="text" id="name-input" class="write" class="js-input" class="nameInput">
+    </label></div><div class="field">
+      <div id="nonvalid-name" class="nonvalid"></div>
+    <label id="email">E-mail
+      <input type="text" id="email-input" class="write" class="js-input">
+    </label></div><div class="field">
+      <div id="nonvalid-email" class="nonvalid"></div>
+    <label id="phone">Телефон (0xx)xxx-xx-xx
+      <input type="text" id="phone-input" class="write" class="js-input">
+    </label></div><div class="field">
+      <div id="nonvalid-phone" class="nonvalid"></div>
+    <label id="city">Город
+      <select name="" id="city-input">
+          <option label="Брест" value="Brest"></option>
+          <option label="Минск" value="Minsk"></option>
+          <option label="Гомель" value="Gomel"></option>
+          <option label="Могилев" value="Mogilev"></option>
+          <option label="Гродно" value="Grodno"></option>
+          <option label="Витебск" value="Vitebsk"></option>
+      </select>
+    </label></div><div class="field">
+    <label id="studying">Я учусь в БГТУ
+      <input type="checkbox" id="study-input">
+    </label></div><div class="field">
+    <label id="course">На акаком курсе Вы учитесь?
+      <input type="radio" class="course-input" name="course" >1
+      <input type="radio" class="course-input"  name="course">2
+      <input type="radio" class="course-input"  name="course">3
+      <input type="radio" class="course-input"  name="course">4
+    </label></div>
+    <div id="nonvalid-course" class="nonvalid"></div>
+    <label id="about">Расскажите о себе 
+      <textarea name="" id="about-input" cols="50" rows="5"></textarea>
+    </label></div>
+    <div id="nonvalid-about" class="nonvalid"></div>
+      <input type="submit" id="submit" value="Проверить">
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>

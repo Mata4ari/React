@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sudoku-board {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.sudoku-board td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sudoku-board td:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+
+.sudoku-board tr:nth-child(3n) td {
+  border-bottom: 2px solid #000;
+}
+
+.button-container button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.valid-cell {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.game-started .valid-cell {
+  background-color: #fff;
+}
+
+.invalid-cell {
+  background-color: #ff0000;
+}
+
+.solved {
+  background-color: yellow;
+}
+
+.inserted-cell {
+  background-color: lightblue;
+}

@@ -1,0 +1,68 @@
+#form{
+  display: inline-block;
+  height: 100px;
+  width: 400px;
+}
+.resDiv{
+  height: 30px;
+  margin-left: 30px;
+}
+label{
+  display: block;
+}
+.window{
+  height: 400px;
+  width: 900px;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around; 
+  align-items: center;
+}
+.thimble {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around; 
+  align-items: center;
+  position: relative;
+}
+.thimbleImg1{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.thimbleImg2{
+  z-index: 1;
+  position: relative;
+  width: 40%;
+  height: 40%;
+  visibility: hidden;
+}
+.reloadInp{
+  margin-left: 410px;
+}
+.message{
+  margin-left: 410px;
+  height: 20px;
+  color: red;
+}
+
+.messageG{
+  color: green;
+}
+.Inp{
+  float: right;
+}
+label{
+  margin-top: 10px;
+}
+.formContainer{
+  display: flex;
+  align-items: center;
+}
+.reloadInp{
+  width: 100px;
+  height: 50px;
+}

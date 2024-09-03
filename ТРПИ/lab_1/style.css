@@ -1,0 +1,47 @@
+form{
+  border: 1px solid black;
+  width: 650px;
+  height: 510px;
+}
+h3{
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+label{
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#city-input{
+  width: 100px;
+}
+
+textarea{
+  display: inline-block;
+  margin-left: 100px;
+}
+.write{
+  margin-right: 250px;
+  float:right;
+}
+#city-input{
+  margin-left: 182px;
+}
+#study-input{
+  margin-left: 115px;
+}
+#course-input{
+  margin-left: 20px;
+}
+#submit{
+  margin-left: 5px;
+  margin-top: 20px;
+}
+input,#city-input,textarea{
+  background-color: rgb(232, 232, 232);
+}
+.nonvalid{
+  margin-left: 5px;
+  color: red;
+}
